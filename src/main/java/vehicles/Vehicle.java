@@ -10,4 +10,12 @@ public abstract class Vehicle {
         this.price = price;
         this.colour = colour;
     }
+
+    public int getPrice() {
+        return this.price;
+    }
+
+    public String getColour() {
+        return this.colour;
+    }
 }

@@ -7,4 +7,8 @@ public class Engine {
     public Engine(int cylinders) {
         this.cylinders = cylinders;
     }
+
+    public int getCylinders() {
+        return cylinders;
+    }
 }
