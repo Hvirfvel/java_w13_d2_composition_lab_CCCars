@@ -7,4 +7,8 @@ public class Battery {
     public Battery(int lifespan) {
         this.lifespan = lifespan;
     }
+
+    public int getLifespan() {
+        return lifespan;
+    }
 }
