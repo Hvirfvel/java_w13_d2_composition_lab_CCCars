@@ -1,5 +1,7 @@
 package vehicles;
 
+import people.Customer;
+
 public abstract class Vehicle {
 
     private int price;
@@ -17,5 +19,12 @@ public abstract class Vehicle {
 
     public String getColour() {
         return this.colour;
+    }
+
+    public boolean canSell(Customer customer) {
+        if (customer.getMoney() >= price) {
+            return true;
+        }
+        return false;
     }
 }
