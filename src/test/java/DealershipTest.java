@@ -74,4 +74,12 @@ public class DealershipTest {
         dealership.sellVehicleToCostumer(electricCar, customer);
         assertEquals(60000, dealership.getTillBalance());
     }
+
+    @Test
+    public void canRepairDamage() {
+        electricCar.addDamage(1000);
+        dealership.repairDamage(electricCar, 1000);
+        assertEquals(59000, dealership.getTillBalance());
+        assertEquals(40000, electricCar.getPrice());
+    }
 }

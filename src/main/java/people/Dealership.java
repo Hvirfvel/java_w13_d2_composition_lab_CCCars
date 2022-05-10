@@ -52,4 +52,9 @@ public class Dealership {
             till.increaseBalance(vehicle.getPrice());
         }
     }
+
+    public void repairDamage(Vehicle vehicle, int cost) {
+        till.reduceBalance(cost);
+        vehicle.increasePriceOnRepair(cost);
+    }
 }

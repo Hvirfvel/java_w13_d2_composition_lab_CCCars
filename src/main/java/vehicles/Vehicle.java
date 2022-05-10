@@ -27,4 +27,12 @@ public abstract class Vehicle {
         }
         return false;
     }
+
+    public void addDamage(int cost) {
+        price -= cost;
+    }
+
+    public void increasePriceOnRepair(int cost) {
+        price += cost;
+    }
 }

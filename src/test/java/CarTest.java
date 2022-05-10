@@ -7,8 +7,8 @@ import static org.junit.Assert.assertEquals;
 
 public class CarTest {
 
-    Car car;
     Engine engine;
+    Car car;
 
     @Before
     public void beforeEach() {
@@ -29,5 +29,11 @@ public class CarTest {
     @Test
     public void getEngineCylinders() {
         assertEquals(6, car.getEngineCylinders());
+    }
+
+    @Test
+    public void canDamageCar() {
+        car.addDamage(500);
+        assertEquals(1250, car.getPrice());
     }
 }
